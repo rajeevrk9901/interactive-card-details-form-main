@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Interactive card details form</title>
+  <link rel="stylesheet" href="style.css">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css?family=Space%20Grotesk" rel="stylesheet">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>-->
+</head>
+
+<body class="font-spacefont">
+  <!-- Global Container -->
+  <div class="flex items-center justify-center h-screen bg-slate-300 ">
+
+    <!-- Local Container -->
+    <div class="flex flex-col mx-6 space-y-4 gap-10 md:flex-row bg-white ">
+
+      <!-- DebitCard container -->
+      <div class="relative md:flex-row bg-red-300 ">
+        <img class=" md:h-[420px] md:w-[205px] w-full" srcset="images\bg-main-mobile.png">
+
+        <img class="bottom-2 rounded absolute top-12 right-4 md:top-1/2 md:left-28 md:bottom-4 md:mt-4 w-80 pos"
+          src=" images\bg-card-back.png" alt="" srcset="">
+
+
+        <img class="absolute rounded bottom-[-30px] left-4 md:bottom-1/2 md:left-20 w-80" src="images\bg-card-front.png"
+          alt="">
+
+        <!-- text on card-1 -->
+        <div
+          class="absolute rounded bottom-[-30px] left-4 md:bottom-1/2 md:left-20 md:w-[205px] flex md:h-28 text-sm flex-col h-[176px] w-[320px]">
+          <div class="circles flex h-5 items-center space-x-2 pt-2 m-2">
+            <div class="circle-1 h-4 w-4 rounded-full bg-white">
+            </div>
+            <div class="circle-2 h-2.5 w-2.5 rounded-full border-[1px]">
+            </div>
+          </div>
+
+          <div class="flex flex-col items-center md:pt-8 pt-20 text-white ">
+            <div class="">0000 0000 0000 0000</div>
+            <div class="flex flex-row space-x-6 text-xs">
+              <div class="">Jane Appleseed</div>
+              <div class="">00/00</div>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- text on card-2 -->
+        <div
+          class="bottom-2 rounded absolute top-12 right-4 md:top-1/2 md:left-28 md:bottom-4 md:mt-4  md:h-28 text-sm flex-col h-44 w-80 md:w-[205px] text-white">
+          <div class=" md:pt-[44px] md:pl-40 pt-[74px] pl-64">123</div>
+        </div>
+
+      </div>
+
+      <!-- Input Container -->
+      <div class=" flex flex-col space-y-4 text-xs justify-center px-4 md:mx-28">
+
+        <div class="flex flex-col space-y-2">
+          <label class="font-bold uppercase">Cardholder Name</label>
+          <input type="text" name="" placeholder="e.g. Jane Appleseed"
+            class="outline outline-gray-200 pl-4 py-2 space-y-2 rounded focus:bg-pink-100 focus:outline-slate-900"
+            id="" />
+        </div>
+
+
+
+        <div class="flex flex-col space-y-2">
+          <label class="font-bold uppercase">Card number</label>
+          <input type="text" name="" placeholder=" e.g. 1234 5678 9123 0000"
+            class="outline outline-gray-200 pl-4 py-2 rounded focus:bg-pink-100 focus:outline-slate-900" id="" />
+        </div>
+
+
+        <!-- Card Expiry Conatiner -->
+        <div class="flex flex-row space-x-4">
+
+          <div class="space-y-2">
+            <label class="font-bold uppercase"> Exp. Date (MM/YY) </label>
+
+            <div>
+
+              <div class="w-11/12 flex flex-row gap-4">
+                <input type=" text" name="" placeholder="MM"
+                  class=" outline outline-gray-200 pl-4 py-2 w-16 rounded focus:bg-pink-100 focus:outline-slate-900"
+                  id="" />
+                <input type="text" name="" placeholder="YY"
+                  class=" outline outline-gray-200 pl-4 py-2 w-16 rounded focus:bg-pink-100 focus:outline-slate-900"
+                  id="" />
+              </div>
+            </div>
+          </div>
+
+
+          <div class="space-y-2">
+            <div class="font-bold uppercase "> CVC </div>
+            <input type="text" name="" placeholder="e.g. 123"
+              class="outline outline-gray-200 pl-4 py-2 rounded w-64 focus:bg-pink-100 focus:outline-slate-900" id="" />
+          </div>
+
+        </div>
+
+        <div class="flex mt-5 justify-center pt-4">
+          <button class="w-full text-center bg-black text-white px-5 py-3 text-xs rounded "> Confirm
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
